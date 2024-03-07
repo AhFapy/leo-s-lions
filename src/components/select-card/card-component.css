@@ -1,0 +1,121 @@
+.card-div {
+    width: 25vw;
+    height: 30vh;
+}
+
+.card-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 20rem;
+    height: 30rem;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 1.5rem;
+    padding-top: 1vh;
+    transition: all ease-in-out 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.card:hover {
+    border: 2px solid #111f28;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    color: white;
+    font-family: fsme;
+    display: flex;
+    justify-content: center;
+}
+
+.bronze {
+    border: 2px solid #cd7f32 ;
+}
+
+.silver {
+    border: 2px solid #c0c0c0 ;
+}
+
+.gold {
+    border: 2px solid #ffd700 ;
+}
+
+.card-advantages {
+    width: 100%;
+    height: 90%;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.advantage {
+    color: white;
+    font-family: fsme;
+    margin-bottom: 15%;
+}
+
+.advantages-list {
+    width: 77%;
+    height: 75%;
+    list-style-type: upper-roman;
+}
+
+.selected {
+    background-color: #111f28;
+}
+
+.selected:hover {
+    border: 2px solid white;
+}
+
+.bn39 {
+    background-image: linear-gradient(135deg, #008aff, #86d472);
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: black;
+    display: block;
+    height: 50px;
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .bn39:hover {
+    color: #fff;
+  }
+  
+  .bn39 .bn39span {
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    transition: all 0.5s ease;
+    width: 100%;
+    font-family: fsme;
+  }
+  
+  .bn39:hover .bn39span {
+    background: transparent;
+    color: white;
+  }

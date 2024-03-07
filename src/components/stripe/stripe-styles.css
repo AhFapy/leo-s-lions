@@ -1,0 +1,164 @@
+.stripe-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.stripe-column {
+    height: 100%;
+    width: 25%;
+    margin-right: 1vw;
+    border-radius: 0.75rem;
+    border: 2px solid white;
+}
+
+.img {
+    border-radius: 0.5rem;
+}
+
+.img-div {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.text-div {
+    width: 100%;
+    height: 75%;
+    padding-top: 1.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    margin-left: 10%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: white;
+    font-family: fsme;
+}
+
+.product-subtitle {
+    margin-left: 10%;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: white;
+    opacity: 0.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.price-div {
+    margin-left: 10%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product-price-number {
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+    font-family: fsme;
+}
+
+.price-p {
+    font-weight: 200;
+    opacity: 0.5;
+    font-size: 0.8rem;
+    color: white;
+    margin-left: 0.5vw;
+    font-family: fsme;
+}
+
+.stripe-btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+}
+
+.stripe-btn {
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    font-family: fsme;
+    font-weight: 600;
+}
+
+.advantage-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.advantage-div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+    padding-left: 7%;
+}
+
+.advantage-svg {
+    fill: white;
+    width: 1rem;
+    border-radius: 1rem;
+    margin-right: 2vw;
+}
+
+.advantage-span {
+    color: white;
+    font-family: fsme;
+    font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+.advantage-span {
+    font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .stripe-wrapper {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        }
+
+        .stripe-column {
+            width: 30rem;
+            height: 105vh;
+            margin-bottom: 10vh;
+            padding-top: 1vh;
+        }
+    }
+
+@media (max-width: 600px) {
+    
+            .stripe-column {
+                width: 25rem;
+            }
+        }
+
+    @media (max-width: 450px) {
+    .stripe-column {
+        width: 20rem;
+    }
+
+    @media (max-width: 450px) {
+        .stripe-column {
+            width: 15rem;
+        }
+    }    
+}

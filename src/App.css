@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: fsme;
+  src: url("./assets/fsme.otf");
+}
+
+@font-face {
+  font-family: ITC;
+  src: url("./assets/ITC.OTF");
+}
