@@ -1,6 +1,6 @@
 body {
     background-image: url("../../assets/fondo.jpg");
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -37,6 +37,8 @@ nav {
     color: gold;
     text-shadow: 0 0 5px black;
     font-family: ITC;
+    animation: fadeIn 1s ease-in-out;
+
 }
 
 .lp-header {
@@ -150,4 +152,31 @@ nav {
     font-family: ITC;
     font-weight: 800;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.scroll-down {
+    width: 35px;
+    height: 64px;
+    border-radius: 3rem;
+    border-width: 4px;
+    border-color: gold; 
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2px;
+}
+
+.scroll-down:hover {
+    cursor: pointer;
+}
+
+.motion-dev {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1.75rem; 
+    background-color: gold;
+    margin-bottom: 1px;
+  
 }

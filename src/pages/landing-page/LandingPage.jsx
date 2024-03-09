@@ -4,9 +4,17 @@ import DefaultButton from '../../components/DefaultButton'
 import bronzeImg from "../../assets/bronze-img.avif"
 import silverImg from "../../assets/silver-img.avif"
 import goldImg from "../../assets/gold-img.avif"
+import {motion} from "framer-motion"
 
 
 function LandingPage() {
+  
+  const scrollDown = () => {
+    window.scrollTo({
+      top: "650",
+      behavior: 'smooth', 
+    });
+  };
   const redirectToPlan = function(route) {
     window.location.href = `/${route}-plan`
   }
@@ -19,6 +27,7 @@ function LandingPage() {
   const silverData = ["Access To ALL 8 OF LEO'S HIGH LEVEL COURSES:", "- Hunters Habits Course (50eur) ","- Mens Life Mastery Course (25eur) ","- Up Your Health Up Your Wealth Course (75eur) ","-Kings Social Skills Course (50$) ","-Unleash Your Killer Instinct Course (25$) ","- Learn To Lead The Pack Course (25$) ","-Full LooksMaxxing Course (50eur/$) ","- Hack The School System Course (75$)", "375 eur for 129? That's A Deal"];
   const goldData = ["Access To ALL 8 Courses (Silver Pack)", "Daily Texting And Communication (Whatsapp)", "Full Daily, Weekly & Monthly Personalized Step By Step Gameplan To Ensure Goal Achievement", "1h Onboarding & Planning Coaching Call, Checkup & Coaching Call Every Other Week"];
 
+  
   return (
     <>
     <div className='lp-wrapper'>
@@ -36,7 +45,19 @@ function LandingPage() {
           <span className='under-header-text'>JOIN THE PACK & BECOME THE KING OF THE JUNGLE.</span>
       </div>
       <div className='under-header'>
-        <DefaultButton/>
+        <div className='scroll-down' onClick={scrollDown}>
+            <motion.dev 
+            animate={{
+              y: [0, 24, 0]
+            }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              repeatType: "loop",
+            }}
+            className="motion-dev"
+            />
+        </div>
       </div>
     </div>
 
@@ -46,17 +67,17 @@ function LandingPage() {
       <div className='img-div'>
         <img className='img' onClick={() => redirectToPlan("bronze")} src={bronzeImg}/>
         {bronzeData.map(info => <span className='plan-span'>{info}<br/></span>)}
-        <button className='plan-btn'>See Plan</button>
+        <button className='plan-btn' onClick={() => redirectToPlan("bronze")}>See Plan</button>
       </div>
       <div className='img-div'>
         <img className='img' onClick={() => redirectToPlan("silver")} src={silverImg}/>
         {silverData.map(info => <span className='plan-span'>{info}<br/></span>)}
-        <button className='plan-btn'>See Plan</button>
+        <button className='plan-btn' onClick={() => redirectToPlan("silver")}>See Plan</button>
       </div>
       <div className='img-div'>
         <img className='img' onClick={() => redirectToPlan("gold")} src={goldImg}/>
         {goldData.map(info => <span className='plan-span'>{info}<br/></span>)}
-        <button className='plan-btn'>See Plan</button>
+        <button className='plan-btn' onClick={() => redirectToPlan("gold")}>See Plan</button>
       </div>
       </div>
 
