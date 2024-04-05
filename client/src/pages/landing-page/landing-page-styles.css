@@ -1,0 +1,455 @@
+
+* {
+    font-family: Poppins;
+}
+
+.lp-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url("../../assets/fondo.jpg");
+    background-size: cover;
+}
+
+nav {
+    height: 12.5vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+
+.nav-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
+.nav-right {
+    width: 50%;
+}
+
+.nav-span {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: gold;
+    text-shadow: 0 0 5px black;
+    font-family: ITC;
+    animation: fadeIn 0.5s ease-in-out; 
+
+}
+
+.lp-header {
+    margin-top: 12.5vh;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25rem;
+    
+}
+.header-text {
+    font-weight: bolder;
+    color: gold;
+    text-shadow: 0 0 5px black;
+    font-family: fsme;
+    font-size: 10rem;
+    text-align: center;
+    margin-left: 5vw;
+    font-weight: bolder;
+    animation: fadeIn 1.5s ease-in-out; 
+}
+
+.under-header {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.under-header-text {
+    font-size: 2.5rem;
+    color: gold;
+    text-shadow: 0 0 5px black;
+    font-weight: bolder;
+    font-family: Poppins;
+    padding-left: 1.5rem;
+    font-weight: 500;
+    animation: fadeIn 1.5s ease-in-out; 
+}
+
+.first-cta-wrapper {
+    padding-top: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    background-color: #00040f;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) black;
+}
+
+.advantages-span {
+    font-size: 5rem;
+    color: gold;
+    text-shadow: 0 0 5px black;
+    font-weight: bolder;
+    font-family: poppins;
+    font-weight: 500;
+    animation: fadeIn 1.5s ease-in-out; 
+}
+
+@media (max-width: 600px) {
+    .header-text {
+        font-size: 3rem;
+
+    }    
+}
+
+@media (max-width: 450px) {
+    .header-text {
+        font-size: 2rem;
+
+    }    
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out; 
+}
+
+.img {
+    width: 45vw;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 5vh;
+    margin-top: 5vh;
+    border: 2px solid white;
+}
+
+.bronze-img {
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 90px #CD7F32;
+}
+
+.img-div {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+
+.img:hover {
+    cursor: pointer;
+}
+
+.plan-btn  {
+        width: 10rem;
+        height: 2rem;
+        background-color: white;
+        text-shadow: 0 0 10px black;
+        border-radius: 0.5rem;
+        font-family: fsme;
+        font-weight: 600;
+}
+
+.plan-span {
+    color: gold;
+    text-shadow: 0 0 5px black;
+    margin-top: 1.5vh;
+    font-size: 1.25rem;
+    font-family: fsme;
+    font-weight: 800;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.scroll-down {
+    width: 35px;
+    height: 64px;
+    border-radius: 3rem;
+    border-width: 4px;
+    border-color: gold; 
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2px;
+    animation: fadeIn 1.5s ease-in-out; 
+}
+
+.scroll-down:hover {
+    cursor: pointer;
+}
+
+.motion-dev {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1.75rem; 
+    background-color: gold;
+    margin-bottom: 1px;
+  
+}
+
+.landing-img {
+    margin-bottom: 5vh;
+    animation: fadeIn 1.5s ease-in-out; 
+    width: 75%;
+}
+
+.plan-img-left-wrapper{
+    width: 100%; 
+    padding-left: 25%;   
+    margin-top: 5vh;
+}
+
+.plan-img-left {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1.25rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 90px silver;
+}
+
+.plan-img-left-gold {
+    width: 20rem;
+    border-radius: 1.25rem;
+    box-shadow: 0px 0px 99px gold;
+}
+
+.plan-img-right-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 25%;   
+    margin-top: 2vh;
+}
+
+.plan-img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1.25rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    box-shadow: 0px 0px 50px silver;
+}
+
+.plan-img-right-gold {
+    width: 20rem;
+    border-radius: 1.25rem;
+    box-shadow: 0px 0px 99px gold;
+}
+
+.gold-img {
+    box-shadow: 0 0 99px rgba(255, 215, 0, 0.5), 0 0 20px rgba(255, 255, 255, 1);
+    margin-bottom: 5vh;
+    
+}
+
+.silver-img {
+    box-shadow: 0px 0px 90px silver;
+    margin-bottom: 5vh;
+}
+
+.gold-plan-img {
+        width: 25rem;
+        height: auto;
+        border-radius: 1.25rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+        box-shadow: 0px 0px 50px gold;
+}
+
+.gold-showcase-div {
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.showcase-text {
+    font-size: 3rem;
+    font-weight: 600;
+    color: gold;
+    text-align: center;
+}
+
+.bronze-text {
+    color: #d28c47;
+    text-shadow:  #CD7F32 0.2px 0 10px;
+}
+
+.silver-text {
+    color: silver;
+    text-shadow: silver 0.2px 0 10px;
+}
+
+.gold-text {
+    color: gold;
+    text-shadow: gold 0.2px 0 10px;
+}
+
+
+.foot-content-div {
+    width: 100%;
+    background-color: black;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+}
+
+.foot-img {
+    height: auto;
+    width: 12.5rem;
+    border-radius: 1rem;
+    border: 2px solid white;
+    box-shadow: 0px 0px 50px white;
+}
+
+.foot-img-2 {
+    height: auto;
+    width: 15rem;
+    border-radius: 1rem;
+    border: 2px solid white;
+    box-shadow: 0px 0px 50px white;
+}
+
+.foot-img-3 {
+    height: auto;
+    width: 15rem;
+    border-radius: 1rem;
+    border: 2px solid white;
+    box-shadow: 0px 0px 50px white;
+}
+
+.foot-img-4 {
+    height: auto;
+    width: 18rem;
+    border-radius: 1rem;
+    border: 2px solid white;
+    box-shadow: 0px 0px 50px white;
+}
+
+.foot-span {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: white 0px 0px 6px;
+}
+
+.foot-span-2 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: white 0px 0px 6px;
+}
+
+.red {
+    text-shadow: red 0.2px 0 10px;
+}
+
+.lion-img {
+    width: 20rem;
+    height: auto;
+    margin-top: 2.5rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-span-2-gold {
+    color: gold;
+    font-size: 3rem;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: gold 0px 0px 6px;
+}
+
+.foot-vid {
+    margin-top: 10vh;
+    margin-bottom: 2rem;
+    height: 25rem;
+    width: auto;
+}
+
+.vid-span {
+    color: gold;
+    font-size: 3rem;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: gold 0px 0px 6px;
+}
+
+.vid-span-white {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 2rem;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+      opacity: 1; /* End with 1 opacity (fully visible) */
+    }
+  }
+  
