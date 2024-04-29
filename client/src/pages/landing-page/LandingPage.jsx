@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect } from 'react'
 import "./landing-page-styles.css"
 import DefaultButton from '../../components/DefaultButton'
 import bronzeImg from "../../assets/plan-imgs/bronze.jpg"
@@ -23,26 +23,14 @@ import foot1 from "../../assets/plan-imgs/foot-1.jpg"
 import foot2 from "../../assets/plan-imgs/foot-2.jpg"
 import foot3 from "../../assets/plan-imgs/foot-3.jpg"
 import foot4 from "../../assets/plan-imgs/foot-4.jpg"
-import footVideo from "../../assets/plan-imgs/foot-vid.mp4"
+import footVideo from "../../assets/plan-imgs/foot-ivd.mp4"
 import footLion from "../../assets/plan-imgs/foot-lion.jpg"
 import playIcon from "../../assets/plan-imgs/play-icon.png"
-
+import goldContract from "../../assets/plan-imgs/gold-contract.jpg"
+import fullAccess from "../../assets/plan-imgs/full-access.jpg"
 
 
 function LandingPage() {
-  const videoRef = useRef(null); // Referencia al elemento de video
-  const [isPlaying, setIsPlaying] = useState(false); // Estado para controlar la reproducción del video
-
-  const togglePlay = () => {
-    const video = videoRef.current;
-    if (video.paused) {
-      video.play();
-    } else {
-      video.pause();
-    }
-    setIsPlaying(!isPlaying); // Actualiza el estado de reproducción
-  };
-
 
   const defaultOptions = {
     reverse:        false,  // reverse the tilt direction
@@ -56,13 +44,28 @@ function LandingPage() {
     easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
 }
 
-  
+useEffect(() => {
+  const script = document.createElement('script');
+  script.src = 'https://assets.calendly.com/assets/external/widget.js';
+  script.async = true;
+  document.body.appendChild(script);
+
+  return () => {
+    document.body.removeChild(script);
+  };
+}, []);
+
   const scrollDown = () => {
     window.scrollTo({
       top: "650",
       behavior: 'smooth', 
     });
   };
+
+  const redirectToBronze = function() {
+    window.location.href = "https://pool-stop-378.notion.site/Leo-s-Lion-Teamspace-e97e36de437547a3b2c0421992fb12df?pvs=4"
+  }
+
   const redirectToPlan = function(route) {
     window.location.href = `/${route}-plan`
   }
@@ -89,7 +92,7 @@ function LandingPage() {
 
       </nav>
       <div className='lp-header'>
-          <span className='header-text'>LEO'S LIONS <br/>COACHING</span>
+          <span className='header-text'>LEO'S LIONS<br/> DEN</span>
           <span className='under-header-text'>JOIN THE PACK & BECOME THE KING OF THE JUNGLE.</span>
       </div>
       <div className='under-header'>
@@ -117,15 +120,15 @@ function LandingPage() {
         <img className='img bronze-img' onClick={() => redirectToPlan("bronze")} src={bronzeImg}/>
       </Tilt>
       <span className='advantages-span bronze-text'>Bronze</span>
-        {bronzeData.map(info => <span className='plan-span'>{info}<br/></span>)}
-        <button className='plan-btn' onClick={() => redirectToPlan("bronze")}>See Plan</button>
+        {bronzeData.map(info => <span className='bronze-text bronze-span'>{info}<br/></span>)}
+        <button className='plan-btn bronze-btn' onClick={() => redirectToPlan("bronze")}>See Plan</button>
       </div>
       <div className='img-div'>
       <Tilt options={defaultOptions} className="tilt-box">
         <img className='img silver-img' onClick={() => redirectToPlan("silver")} src={silverImg}/>
       </Tilt>
       <span className='advantages-span silver-text'>Silver</span>
-      <span className='advantages-span'>Unlock All These Courses</span>
+      <span className='advantages-span silver-text'>Unlock All These Courses</span>
       <div className='plan-img-wrapper'>
       <img className='plan-img' src={image1}></img>
       <img className='plan-img' src={image2}></img>
@@ -140,12 +143,18 @@ function LandingPage() {
       <img className='plan-img' src={image7}></img>
       <img className='plan-img' src={image8}></img>
       </div>
-        <button className='plan-btn' onClick={() => redirectToPlan("silver")}>See Plan</button>
+      <div className='silver-prices'>
+          <span><span className='silver-prices-span'><b>99x4 + 49x4 = </b></span><span className='silver-prices-subtext'>592€</span></span><br/><br/>
+        </div>
+      <span className='under-header-text silver-price-span'>FOR ONLY A 1 TIME FEE OF 129€!</span>
+
+        <button className='plan-btn silver-btn' onClick={() => redirectToPlan("silver")}>See Plan</button>
       </div>
       <div className='img-div' >
       <Tilt options={defaultOptions} className="tilt-box">
         <img className='img gold-img' onClick={() => redirectToPlan("gold")} src={goldImg}/>
       </Tilt>
+      <span className='advantages-span gold-text'><b>LEO'S LIONS COACHING</b></span>
       <span className='advantages-span gold-text'>Gold</span>
         <div className='gold-showcase-div'>
           <img className='gold-plan-img' src={callsImg}></img>
@@ -159,9 +168,25 @@ function LandingPage() {
         <img className='gold-plan-img' src={gameplanImg}></img>
           <span className='showcase-text'>Personalised Gameplan</span>
         </div>
+        <div className='gold-showcase-div reverse'>
+        <img className='gold-plan-img' src={goldContract}></img>
+          <span className='showcase-text'>90 Day Contract</span>
+        </div>
+        <div className='gold-showcase-div '>
+        <img className='gold-plan-img' src={fullAccess}></img>
+          <span className='showcase-text'>Full Access To Bronze <br/> and Silver Plans</span>
+        </div>
+        <div className='gold-prices'>
+          <span className='gold-prices-span'><b>1-1 Coaching Calls</b></span> <br/><span className='gold-prices-subtext'>Each one is normally 30$, you get one every other week. ($60/mo)</span><br/><br/>
+          <span className='gold-prices-span'><b>Daily Chat Coaching</b></span> <br/><span className='gold-prices-subtext'>So powerful you wont't even need calls because of it ($99/mo)</span><br/><br/>
+          <span className='gold-prices-span'><b>Personalized Goal-Oriented Day-by-Day Monthly Gameplan</b></span> <br/><span className='gold-prices-subtext'>Just follow it and see the results ($30/mo)</span><br/><br/>
+          <span><span className='gold-prices-end-span-no-bright'>$189 (gold) + $592 (silver included in gold) = </span><span className='gold-prices-end-span'>$774 FOR 299/mo!</span></span>
+        </div>
+
       </div>
-        <button className='plan-btn' onClick={() => redirectToPlan("gold")}>See Plan</button>
+        <button className='plan-btn gold-btn' onClick={() => redirectToPlan("gold")}>See Plan</button>
       </div>
+      
   <div className='foot-content-div'>
     <img className='foot-img' src={foot1}></img>
     <span className='foot-span'>DON'T JOIN <br/> & <br/> <span className='foot-span red'>DON'T IMPROVE</span></span>
@@ -173,16 +198,23 @@ function LandingPage() {
     <img className='foot-img-4' src={foot4}></img>
   </div>
   <div className='foot-content-div column'>
-  <span className='foot-span-2'> <span className='foot-span-2-gold'>OR</span> <br/><br/>JOIN ME <br/> & <br/> <span className='foot-span-2-gold'>NEVER BE THE SAME AGAIN</span></span>
+  <video className='foot-vid' controls src={footVideo}></video>
+
+  <span className='foot-span-2'> <span className='foot-span-2-gold'>OR</span> <br/><br/><span className='join-me-size'>JOIN ME</span> <br/> & <br/> <span className='foot-span-2-gold'><span className='join-me-size'>NEVER</span><br/><br/> BE THE SAME AGAIN</span></span>
   <img className='lion-img' src={footLion}></img>
-  <video className='foot-vid' controls ref={videoRef} autoPlay src={footVideo}></video>
+  <span className='refund-span'>100% FULL REFUND if you don't achieve your trimestral Goals & Not Happy with the Product (I know it won't happen that's why I'm betting on it)</span><br/><br/>
   <span className='vid-span'>My Purpose:</span>
   <span className='vid-span-white'>TO GUIDE YOUNG MEN INTO THE PATH<br/>I'M GOING THROUGH, TO ADD <br/> SUCCESSFUL BROTHERS INTO MY TRIBE</span>
   </div>
 
 
-      {/* <StripeComponent/>
-      <button style={{backgroundColor: "white"}} onClick={() => redirectToCourse()}>course</button> */}
+      <button style={{backgroundColor: "white"}} onClick={() => redirectToCourse()}>course</button> 
+      <div style={{ minWidth: '320px', height: '700px' }}>
+      <div className="calendly-inline-widget"
+      data-url="https://calendly.com/leo-matiano?hide_gdpr_banner=1&background_color=1a1a1a&text_color=f9ee08&primary_color=ffbf00"
+      style={{ minWidth: '320px', height: '700px' }}
+    />
+    </div>
     </div>
 
    </>

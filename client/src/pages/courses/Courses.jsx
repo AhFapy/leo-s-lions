@@ -3,31 +3,6 @@ import "./courses-styles.css"
 import CourseCard from '../../components/courses-cards/CourseCard'
 
 function Courses() {
-  const mewingCourseData = {
-    courseName: "Mewing Course",
-    sections: [
-      {sectionName: "Introduction", subSections: ["What is Mewing?", "The Benefits"]},
-      {sectionName: "How To Mew?", subSections: ["Action Step"]},
-  ],
-  route: "/courses/mewing"
-
-  }
-  const physiqueCourseData = {
-    courseName: "Aesthetique Physique Course",
-    sections: [
-      {sectionName: "Introduction", subSections: ["What is Mewing?", "The Benefits"]},
-      {sectionName: "How To Mew?", subSections: ["Action Step"]},
-  ],
-  route: "/courses/physique"
-  }
-  const businessCourseData = {
-    courseName: "Scale Your Business",
-    sections: [
-      {sectionName: "Introduction", subSections: ["What is Mewing?", "The Benefits"]},
-      {sectionName: "How To Mew?", subSections: ["Action Step"]},
-      ],
-    route: "/courses/business"
-  }
 
 
   return (
@@ -36,9 +11,10 @@ function Courses() {
             <span className='courses-sub'>Courses</span>
         </div>
         <div className='courses-card-container'>
-            <CourseCard data={mewingCourseData}/>
-            <CourseCard data={physiqueCourseData}/>
-            <CourseCard data={businessCourseData}/>
+            <CourseCard route={"courses/enhanced-masculinity"} name={"Enhanced Masculinity Course"}/>
+            <CourseCard route={"courses/tribe-leader"} name={"Tribe Leader Course"}/>
+            <CourseCard route={"courses/hack-the-school-system"} name={"Hack The School System Course"}/>
+            <CourseCard route={"courses/alpha-social-skills"} name={"Alpha Social Skills Course"}/>
         </div>
     </div>
   )

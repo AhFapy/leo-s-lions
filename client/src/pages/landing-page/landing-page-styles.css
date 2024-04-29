@@ -8,8 +8,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: url("../../assets/fondo.jpg");
-    background-size: cover;
+    /* background: url("../../assets/fondo.jpg"); */
+        /* background-size: cover; */
+    background-color: black;
 }
 
 nav {
@@ -60,7 +61,8 @@ nav {
     font-weight: bolder;
     color: gold;
     text-shadow: 0 0 5px black;
-    font-family: fsme;
+    /* font-family: fsme; */
+    font-family: 'Times New Roman', Times, serif;
     font-size: 10rem;
     text-align: center;
     margin-left: 5vw;
@@ -82,7 +84,8 @@ nav {
     color: gold;
     text-shadow: 0 0 5px black;
     font-weight: bolder;
-    font-family: Poppins;
+    /* font-family: Poppins; */
+    font-family: 'Times New Roman', Times, serif;
     padding-left: 1.5rem;
     font-weight: 500;
     animation: fadeIn 1.5s ease-in-out; 
@@ -95,7 +98,7 @@ nav {
     align-items: center;
     flex-direction: column;
     padding: 0;
-    background-color: #00040f;
+    background-color: black;
     box-shadow: 0 0 200px rgba(0,0,0,0.9) black;
 }
 
@@ -177,13 +180,29 @@ nav {
 }
 
 .plan-btn  {
-        width: 10rem;
-        height: 2rem;
+        width: 15rem;
+        height: 3rem;
+        margin-bottom: 2rem;
         background-color: white;
         text-shadow: 0 0 10px black;
         border-radius: 0.5rem;
         font-family: fsme;
         font-weight: 600;
+}
+
+.bronze-btn {
+    background-color:#CD7F32;
+    color: white;
+}
+
+.silver-btn {
+    background-color:silver;
+    color: black;
+}
+
+.gold-btn {
+    background-color:gold;
+    color: black;
 }
 
 .plan-span {
@@ -196,6 +215,18 @@ nav {
     text-align: center;
     animation: fadeIn 1s ease-in-out;
 }
+
+.bronze-span {
+    margin-top: 1.5vh;
+    font-size: 1.25rem;
+    font-family: fsme;
+    font-weight: 800;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+
 
 .scroll-down {
     width: 35px;
@@ -324,6 +355,8 @@ nav {
     text-shadow:  #CD7F32 0.2px 0 10px;
 }
 
+
+
 .silver-text {
     color: silver;
     text-shadow: silver 0.2px 0 10px;
@@ -442,7 +475,83 @@ nav {
     margin-top: 2rem;
 }
 
+.silver-price-span {
+    color: white;
+    margin-top: 1rem;
+}
 
+.gold-prices {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: gold;
+    font-size: 2rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.silver-prices {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: silver;
+    font-size: 2rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.gold-prices-span {
+    text-shadow: gold 0px 0px 40px;
+    font-size: 2.8rem;
+}
+
+.silver-prices-span {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.silver-prices-subtext {
+    text-shadow: silver 0px 0px 10px;
+    font-weight: bold;
+
+}
+
+.gold-prices-end-span {
+    text-shadow: gold 0px 0px 10px;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.gold-prices-end-span-no-bright {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.gold-prices-subtext {
+    font-size: 1.85rem;
+}
+
+.join-me-size {
+    font-size: 3.5rem;
+}
+
+.refund-span {
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    
 
 @keyframes fadeIn {
     from {
