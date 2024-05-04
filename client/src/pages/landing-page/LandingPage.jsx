@@ -200,7 +200,7 @@ useEffect(() => {
   <div className='foot-content-div column'>
   <video className='foot-vid' controls src={footVideo}></video>
 
-  <span className='foot-span-2'> <span className='foot-span-2-gold'>OR</span> <br/><br/><span className='join-me-size'>JOIN ME</span> <br/> & <br/> <span className='foot-span-2-gold'><span className='join-me-size'>NEVER</span><br/><br/> BE THE SAME AGAIN</span></span>
+  <span className='foot-span-2'> <br/><span className='foot-span-2-gold OR-span'>OR</span> <br/><br/><br/><span className='join-me-size'>JOIN ME</span> <br/> & <br/> <span className='foot-span-2-gold'><span className='join-me-size'>NEVER</span><br/><br/> BE THE SAME AGAIN</span></span>
   <img className='lion-img' src={footLion}></img>
   <span className='refund-span'>100% FULL REFUND if you don't achieve your trimestral Goals & Not Happy with the Product (I know it won't happen that's why I'm betting on it)</span><br/><br/>
   <span className='vid-span'>My Purpose:</span>
@@ -211,7 +211,7 @@ useEffect(() => {
       <button style={{backgroundColor: "white"}} onClick={() => redirectToCourse()}>course</button> 
       <div style={{ minWidth: '320px', height: '700px' }}>
       <div className="calendly-inline-widget"
-      data-url="https://calendly.com/leo-matiano?hide_gdpr_banner=1&background_color=1a1a1a&text_color=f9ee08&primary_color=ffbf00"
+      data-url="https://calendly.com/leo-matiano/coaching-fit-call"
       style={{ minWidth: '320px', height: '700px' }}
     />
     </div>

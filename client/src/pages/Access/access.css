@@ -1,0 +1,106 @@
+.access-wrapper {
+    width: 100%;
+    height: 100vh;
+    padding-top: 3vh;
+    background-color: black;
+}
+
+.access-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.access-text {
+    font-weight: bolder;
+    color: gold;
+    text-shadow: 0 0 5px black;
+    font-family: ITC;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bolder;
+    animation: fadeIn 0.5s ease-in-out; 
+    display: flex;
+}
+
+.add-member-wrapper {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-member-container {
+    width: 60%;
+    height: 90%;
+    border: 3px solid rgb(255, 215, 0); 
+    background-color: black;
+    border-radius: 1.75rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-subtitle {
+    font-size: 3rem;
+    color: gold;
+    text-shadow: 0 0 5px gold;
+    margin-top: 1.25vh;
+}
+
+.add-member-form {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-member-input {
+    width: 50%;
+    height: 2rem;
+    margin-top: 3vh;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 2px solid gold;
+    color: gold;
+    text-shadow: 0 0 2px gold;
+    padding-left: 0.5rem;
+}
+
+.add-member-input::placeholder {
+    color: gold;
+    text-shadow: 0 0 2px gold;
+}
+
+.add-member-input:focus {
+    outline: none;
+}
+
+.add-member-button-access {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #FFD814;
+    border: 1px solid #FCD200;
+    font-size: 13px;
+    height: 31px;
+    padding: 0 11px;
+    text-align: center;
+    width: 3rem;
+    min-width: 200px;
+    font-weight: 500;
+    color: #0F1111;
+    :hover{
+        background: #F7CA00;
+        border-color: #F2C200;
+        box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    }
+    }
+
+.warning-span {
+    color: white;
+}

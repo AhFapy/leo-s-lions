@@ -551,7 +551,9 @@ nav {
     align-items: center;
 }
 
-    
+.OR-span {
+    font-size: 7.5rem;
+}
 
 @keyframes fadeIn {
     from {

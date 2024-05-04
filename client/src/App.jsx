@@ -6,7 +6,7 @@ import PlanPage from "./pages/plan-page/PlanPage"
 import Courses from './pages/courses/Courses'
 import AdminPage from './pages/Admin/AdminPage'
 import CourseTemplateComponent from "./pages/courses/template/CourseTemplateComponent"
-
+import Access from "./pages/Access/Access"
 function App() {
 
   return (
@@ -24,6 +24,7 @@ function App() {
         <Route path='/courses/hack-the-school-system' element={<CourseTemplateComponent courseKey={"Hack The School System Course"}/>}/>
         <Route path='/courses/alpha-social-skills' element={<CourseTemplateComponent courseKey={"Alpha Social Skills Course"}/>}/>
         <Route path='/admin' element={<AdminPage/>}/>
+        <Route path='/access' element={<Access/>}/>
       </Routes>
     </BrowserRouter>
     </>
