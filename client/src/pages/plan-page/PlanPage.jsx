@@ -15,6 +15,9 @@ function PlanPage(props) {
     window.location.href = "https://buy.stripe.com/fZecP78PbeBjaiY8ww"
   }
 
+  function redirectToCalendly() {
+    window.location.href = "https://calendly.com/leo-matiano/30min"
+  }
 
   return (
     <div className='plan-page-wrapper'>
@@ -33,13 +36,16 @@ function PlanPage(props) {
 
         {props.plan === "BRONZE" ? <span className='span-plan-info'>FREE PLAN</span> : ""}
         {props.plan === "SILVER" ? <span className='span-plan-info'>Basic Lions Coaching Bundle</span> : ""}
-        {props.plan === "GOLD" ? <span className='span-plan-info'>Premium Level Lions Coaching Bundle</span> : ""}
+        {props.plan === "GOLD" ? <span className='span-plan-info'>Premium Level <br/> Lions Coaching Bundle</span> : ""}
         <div className='stripe-btn-div'>
         {props.plan === "BRONZE" ? <button onClick={redirectToBronze} className='stripe-btn'>Subscribe</button> : ""}
         {props.plan === "SILVER" ? <button onClick={redirectToSilver} className='stripe-btn'>Start Now</button> : ""}
         {props.plan === "GOLD" ? <button onClick={redirectToGold} className='stripe-btn'>Start Now</button> : ""}
         </div>
         </div>
+      </div>
+      <div className='call-div'>
+      {props.plan === "GOLD" ? <button onClick={redirectToCalendly} className='call-btn'>Any Questions? Hop On A Call</button> : ""}
       </div>
     </div>
   )

@@ -70,6 +70,8 @@ nav {
     animation: fadeIn 1.5s ease-in-out; 
 }
 
+  
+
 .under-header {
     width: 100%;
     height: 20vh;
@@ -89,6 +91,7 @@ nav {
     padding-left: 1.5rem;
     font-weight: 500;
     animation: fadeIn 1.5s ease-in-out; 
+    text-align: center;
 }
 
 .first-cta-wrapper {
@@ -112,19 +115,187 @@ nav {
     animation: fadeIn 1.5s ease-in-out; 
 }
 
+@media (max-width: 1100px) {
+    .header-text {
+        font-size: 7rem !important;
+    }    
+
+    .under-header-text {
+        font-size: 2rem;
+    }
+
+    .plan-img {
+        width: 10rem !important; 
+        height: 10rem !important;
+    }
+
+    .advantages-span {
+        font-size: 3rem;
+    }
+
+    .showcase-text {
+        font-size: 2rem !important;
+    }
+
+    .foot-content-div {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .foot-span {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .foot-span-2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .header-text {
+        font-size: 5rem;
+    }    
+
+    .under-header-text {
+        font-size: 1.75rem;
+    }
+
+    .foot-vid {
+        height: 17.5rem !important;
+    }
+
+    .gold-prices-span{
+        font-size: 2rem !important;
+    }
+    .gold-prices-subtext{
+        font-size: 1.5rem !important;
+    }
+
+    .gold-prices-end-span-no-bright{
+        font-size: 1.5rem !important;
+    }
+
+    .gold-prices-end-span{
+        font-size: 1.5rem !important;
+    }
+
+
+}
+
+@media (max-width: 850px) {
+    .gold-plan-img {
+        width: 15rem !important;   
+    }
+
+}
+
+
+@media (max-width: 750px) {
+    .header-text {
+        font-size: 5rem !important;
+    }    
+
+    .plan-img {
+        height: 7rem !important;
+        width: 7rem !important;
+    }
+
+    .nav-span {
+        font-size: 0.75rem;   
+    }
+}
+
+
+@media (max-width: 650px) {
+    .gold-showcase-div {
+        display: flex;
+        flex-direction: column !important;
+    }    
+    .header-text {
+        font-size: 4rem !important;
+    }    
+
+}
+
 @media (max-width: 600px) {
     .header-text {
         font-size: 3rem;
-
     }    
+
+    .under-header-text {
+        font-size: 1rem;
+    }
+
+    .advantages-span {
+        font-size: 2.5rem !important;
+    }
+
+    .foot-vid {
+        width: 10rem !important;
+    }
+
+    .plan-img {
+        width: 5rem !important;
+        height: 5rem !important;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .advantages-span {
+        font-size: 2rem !important;
+    }
+
+    .plan-img {
+        margin-right: 1rem !important;
+        margin-left: 1rem !important;
+
+    }
+
+    .lion-img {
+        width: 10rem !important;
+    }
+
+    .foot-span {
+        font-size: 2rem !important;
+    }
+
+    .foot-span-2 {
+        font-size: 2rem !important;
+    }
+
+}
+
+.calendly-inline-widget {
+    margin-bottom: 10rem !important;
 }
 
 @media (max-width: 450px) {
     .header-text {
-        font-size: 2rem;
-
+        font-size: 1.75rem !important;
     }    
+    .advantages-span {
+        font-size: 1rem !important;
+    }
+
+    .foot-img-3{
+        width: 10rem !important;
+    }
+    .foot-img-4 {
+        width: 13rem !important;
+    }
+
+    .plan-img {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        border-radius: 0.25rem !important;
+    }
 }
+
+
 
 .img-wrapper {
     display: flex;
@@ -549,6 +720,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .OR-span {

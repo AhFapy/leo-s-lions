@@ -3,13 +3,11 @@
     height: 100vh;
     padding-top: 3vh;
     background-color: black;
-}
-
-.access-header {
-    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
 
 .access-text {
     font-weight: bolder;
@@ -43,7 +41,7 @@
 }
 
 .header-subtitle {
-    font-size: 3rem;
+    font-size: 2rem !important;
     color: gold;
     text-shadow: 0 0 5px gold;
     margin-top: 1.25vh;
@@ -99,6 +97,7 @@
         border-color: #F2C200;
         box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
     }
+    margin-bottom: 1rem;
     }
 
 .warning-span {

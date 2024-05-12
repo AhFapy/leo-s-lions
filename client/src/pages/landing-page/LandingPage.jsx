@@ -208,11 +208,10 @@ useEffect(() => {
   </div>
 
 
-      <button style={{backgroundColor: "white"}} onClick={() => redirectToCourse()}>course</button> 
       <div style={{ minWidth: '320px', height: '700px' }}>
       <div className="calendly-inline-widget"
-      data-url="https://calendly.com/leo-matiano/coaching-fit-call"
-      style={{ minWidth: '320px', height: '700px' }}
+      data-url="https://calendly.com/leomatianorubin/30-min-call-clone"
+      style={{ minWidth: '50vw', height: '700px',  }}
     />
     </div>
     </div>
