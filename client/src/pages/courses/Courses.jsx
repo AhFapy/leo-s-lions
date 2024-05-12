@@ -33,7 +33,7 @@ function Courses() {
   
   return (
     <>
-    {/* <div id='access-container'>
+ <div id='access-container'>
     <div className='access-wrapper'>
     <div className='access-header'>
     </div>
@@ -50,11 +50,11 @@ function Courses() {
       </div>
     </div>
   </div>
-  </div> */}
+  </div> 
 
 
 
-    <div className='courses-wrapper'>
+    <div className='courses-wrapper hidden'>
         <div className='courses-top'>
             <span className='courses-sub'>Courses</span>
         </div>
