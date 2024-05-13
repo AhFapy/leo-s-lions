@@ -26,8 +26,9 @@ function PlanPage(props) {
       </div>
       <div className='plan-container'>
         <div className='video-container'> 
-        {props.plan === "BRONZE" ?  <iframe width="100%" height="100%" className='loom-plan' src="https://www.loom.com/embed/9e19da54f2494225a39a80087f35872d?sid=ec02ee9a-2c6a-46fe-9077-d9050be8bc5b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
- : ""}
+        {props.plan === "BRONZE" ?  <iframe width="100%" height="100%" className='loom-plan' src="https://www.loom.com/embed/9e19da54f2494225a39a80087f35872d?sid=ec02ee9a-2c6a-46fe-9077-d9050be8bc5b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>: ""}
+        {props.plan === "SILVER" ?  <iframe width="100%" height="100%"  className='loom-plan' src="https://www.loom.com/embed/0e0ff5acb2d445fca73ea9a3e57ddd0c?sid=14fda2b8-c831-45f1-88cd-90c77b6ef9d0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>: ""}
+        {props.plan === "GOLD" ?  <iframe width="100%" height="100%"  className='loom-plan' src="https://www.loom.com/embed/b62cd3f3d81b4301806d444ef24a4816?sid=2cdc0356-a2e9-49fc-acb2-f58deec425f7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> : ""}
         </div>
         <div className='plan-info'>
         {props.plan === "BRONZE" ? <img className='img-plan' src={BronzeImg}/> : ""}
