@@ -1,0 +1,44 @@
+.gold-lobby-body {
+    width: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iframe-container-gold {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-svg-gold {
+    width: 3rem;
+    color: #25D366;
+}
+
+.whatsapp-btn-wrap {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+    color: #fff; /* Color de texto */
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+}
+  

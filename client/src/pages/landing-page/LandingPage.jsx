@@ -70,8 +70,8 @@ useEffect(() => {
     window.location.href = `/${route}-plan`
   }
 
-  const redirectToCourse = function() {
-    window.location.href = "/courses"
+  const redirectToAccess = function() {
+    window.location.href = "/access"
   }
 
   const bronzeData = ["Access To Leo's Personal Tools, Templates & Checklists", "Access To Private Routine", "Leo's Self Improvement Habit Guides (Meditation, Visualization, Stretching...)"];
@@ -114,6 +114,7 @@ useEffect(() => {
 
     <div className='first-cta-wrapper'>
       <span className='header-text'>Select Your Rank</span>
+      <span className='under-header-text pointer' onClick={redirectToAccess}>Or <b>Access</b>.</span>
       <div className='img-wrapper'>
       <div className='img-div'>
       <Tilt options={defaultOptions} className="tilt-box">
@@ -208,12 +209,6 @@ useEffect(() => {
   </div>
 
 
-      <div style={{ minWidth: '320px', height: '700px' }}>
-      <div className="calendly-inline-widget"
-      data-url="https://calendly.com/leomatianorubin/30-min-call-clone"
-      style={{ minWidth: '50vw', height: '700px',  }}
-    />
-    </div>
     </div>
 
    </>

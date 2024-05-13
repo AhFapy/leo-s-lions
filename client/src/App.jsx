@@ -6,6 +6,8 @@ import PlanPage from "./pages/plan-page/PlanPage"
 import Courses from './pages/courses/Courses'
 import AdminPage from './pages/Admin/AdminPage'
 import CourseTemplateComponent from "./pages/courses/template/CourseTemplateComponent"
+import Access from './pages/Access/Access'
+import GoldLobby from './pages/gold-lobby/GoldLobby'
 function App() {
 
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path='/bronze-plan' element={<PlanPage plan="BRONZE"/>}/>
         <Route path='/silver-plan' element={<PlanPage plan="SILVER"/>}/>
         <Route path='/gold-plan' element={<PlanPage plan="GOLD"/>}/>
+        <Route path='/gold-lobby' element={<GoldLobby/>}/>
+        <Route path='/access' element={<Access />}/>
         <Route path='/courses' element={<Courses/>}/>
         <Route path='/courses/before-watching' element={<CourseTemplateComponent courseKey={"Before Watching Courses"}/>}/>
         <Route path='/courses/enhanced-masculinity' element={<CourseTemplateComponent courseKey={"Enhanced Masculinity Course"}/>}/>

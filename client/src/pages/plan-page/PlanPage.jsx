@@ -26,7 +26,8 @@ function PlanPage(props) {
       </div>
       <div className='plan-container'>
         <div className='video-container'> 
-        *video*
+        {props.plan === "BRONZE" ?  <iframe width="100%" height="100%" className='loom-plan' src="https://www.loom.com/embed/9e19da54f2494225a39a80087f35872d?sid=ec02ee9a-2c6a-46fe-9077-d9050be8bc5b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ : ""}
         </div>
         <div className='plan-info'>
         {props.plan === "BRONZE" ? <img className='img-plan' src={BronzeImg}/> : ""}

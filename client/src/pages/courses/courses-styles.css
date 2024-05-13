@@ -53,11 +53,38 @@
     margin-bottom: 1vh;
 }
 
+@media (max-width: 1100px) {
+    .courses-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
 .course-img {
-    width: 100% !important;
-    height: 100% !important;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px silver;
+}
+
+@media (max-width: 400px) {
+    .course-card {
+        width: 15rem !important;
+    }
+
+    .course-img-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .course-img {
+        width: 10rem !important;
+        height: 10rem !important;
+    }
+
 }
 
 .bar-span {
