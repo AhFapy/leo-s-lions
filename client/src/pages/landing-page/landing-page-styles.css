@@ -739,3 +739,37 @@ nav {
 .pointer:hover {
     cursor: pointer;
 }
+
+.call-btn {
+    height: 5rem;
+    width: 10rem;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 0.5rem;
+    font-family: fsme;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-svgs-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.svg {
+    fill: white;
+    width: 25px;
+    margin-right: 20px;
+}
+
+.svg:hover {
+    cursor: pointer;
+}

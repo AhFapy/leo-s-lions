@@ -16,7 +16,7 @@ function PlanPage(props) {
   }
 
   function redirectToCalendly() {
-    window.location.href = "https://calendly.com/leo-matiano/30min"
+    window.location.href = "https://calendly.com/leo-matiano/coaching-fit-call"
   }
 
   return (
@@ -44,11 +44,22 @@ function PlanPage(props) {
         {props.plan === "SILVER" ? <button onClick={redirectToSilver} className='stripe-btn'>Start Now</button> : ""}
         {props.plan === "GOLD" ? <button onClick={redirectToGold} className='stripe-btn'>Start Now</button> : ""}
         </div>
+        
         </div>
+        
       </div>
       <div className='call-div'>
-      {props.plan === "GOLD" ? <button onClick={redirectToCalendly} className='call-btn'>Any Questions? Hop On A Call</button> : ""}
+      {props.plan === "GOLD" ? <iframe
+        title="Calendly"
+        src="https://calendly.com/leo-matiano/coaching-fit-call"
+        width="500px"
+        height="500px"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+ : ""}
       </div>
+
     </div>
   )
 }
