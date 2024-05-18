@@ -190,10 +190,10 @@ useEffect(() => {
           <span className='showcase-text'>Full Access To Bronze <br/> and Silver Plans</span>
         </div>
         <div className='gold-prices'>
-          <span className='gold-prices-span'><b>1-1 Coaching Calls</b></span> <br/><span className='gold-prices-subtext'>Each one is normally 30$, you get one every other week. ($60/mo)</span><br/><br/>
+          <span className='gold-prices-span'><b>1-1 Coaching Calls</b></span> <br/><span className='gold-prices-subtext'>Each one is normally 30$, you get an Onboarding Call + 3 Calls/mo. (90eur)</span><br/><br/>
           <span className='gold-prices-span'><b>Daily Chat Coaching</b></span> <br/><span className='gold-prices-subtext'>So powerful you wont't even need calls because of it ($99/mo)</span><br/><br/>
           <span className='gold-prices-span'><b>Personalized Goal-Oriented Day-by-Day Monthly Gameplan</b></span> <br/><span className='gold-prices-subtext'>Just follow it and see the results ($30/mo)</span><br/><br/>
-          <span><span className='gold-prices-end-span-no-bright'>$189 (gold) + $592 (silver included in gold) = </span><span className='gold-prices-end-span'>$774 FOR 299/mo!</span></span>
+          <span><span className='gold-prices-end-span-no-bright'>$219 (gold) + $592 (silver included in gold) = </span><span className='gold-prices-end-span'>$804 FOR 299/mo!</span></span>
         </div>
 
       </div>
@@ -213,14 +213,25 @@ useEffect(() => {
   <div className='foot-content-div column'>
   <video className='foot-vid' controls src={footVideo}></video>
 
-  <span className='foot-span-2'> <br/><span className='foot-span-2-gold OR-span'>OR</span> <br/><br/>  <button onClick={redirectToCalendly} className='call-btn'>Any Questions? Hop On A Call</button> <br/><br/><span className='join-me-size'>JOIN ME</span> <br/> & <br/> <span className='foot-span-2-gold'><span className='join-me-size'>NEVER</span><br/><br/> BE THE SAME AGAIN</span></span>
+  <span className='foot-span-2'> <br/><span className='foot-span-2-gold OR-span'>OR</span> <br/><br/>
+
+  <div style={{ height: '100vh', width: '100%', position: 'relative' }}>
+      <iframe
+        src="https://calendly.com/leo-matiano/coaching-fit-call"
+        style={{ border: 0, height: '100%', width: '100%' }}
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+  <br/><br/><span className='join-me-size'>JOIN ME</span> <br/> & <br/> <span className='foot-span-2-gold'><span className='join-me-size'>NEVER</span><br/><br/> BE THE SAME AGAIN</span></span>
   <img className='lion-img' src={footLion}></img>
   <span className='refund-span'>100% FULL REFUND if you don't achieve your trimestral Goals & Not Happy with the Product (I know it won't happen that's why I'm betting on it)</span><br/><br/>
   </div>
   <div className='footer'>
   <span className='foot-span-2'>Leo<span className='foot-span-2 red'> Matiano</span></span>
   <div className='footer-svgs-container'>
-  <svg onClick={redirectToInstagram} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className='svg'><path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/></svg>
+  <svg onClick={redirectToX} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className='svg'><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
   <svg onClick={redirectToX} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className='svg'><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
   </div>
   </div>
